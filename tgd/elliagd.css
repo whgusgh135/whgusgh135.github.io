@@ -1,11 +1,10 @@
 /* CSS 코드*/
+
 /*배경*/
 html, body {
     background: #faf5f7;
     height: auto !important;
 }
-
-
 
 /* 로고 */
 header .row>div:nth-child(1)>a {
@@ -20,180 +19,175 @@ header .row>div:nth-child(1)>a>img {
     display: none;
 }
 
+/* 검색창 */
 header #right-search-form>input[type=text] {
-
-    position: relative;
-
-    border: 3px solid #705ac3;
-
-    background: #fff;
-
-    font-size: 1.1em;
-
-    padding: 0.3em 0.5em;
-
+    border: 3px solid #ff768b;
 }
 
 header #right-search-form>#right-search-btn {
-
-    color: #ffffff;
-
-    background: transparent;
-
-    border: none;
-
-    font-size: 1.4em;
-
+    color: #ff768b;
 }
 
 
 
+/* 광고 배너 */
 header #header-bar>.row {
-
-    padding-top: 0.3em;
-
-    padding-bottom: .3em;
-
-    border-top: 5px solid #705ac3;
-
-    background: #fff;
-
-    border-bottom: 2px solid #ebeae8;
-
-    border-right: 2px solid #ebeae8;
-
-    margin-top: -12px;
-
+    border-top: 5px solid #ff768b
 }
 
+/* 광고 배너 광고 뱃지 */
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #ff768b;
+}
+
+
+/* 좌측 배너 헤더 */
 #main .menu-wrapper>.header {
-
-    background: #705ac3;
-
-    color: #fff;
-
-    padding: .45em 1.4em .45em 1em;
-
-    font-weight: bold;
-
+    background: #ff768b;
 }
+
+#main .menu-wrapper .spacer {
+    background: #ff768b;
+}
+
+#main .menu-wrapper>a>em {
+    color: #f97f91
+}
+
 
 /*프로필 */
 
 #board-info #board-info-profile-img {
-
-    z-index: 100;
-
-    margin-top: -36px;
-
-    margin-left: 613px;
-
+    margin-top: -8px;
+    margin-left: 768px;
     position: absolute;
-
-    height: 100px;
-
+    height: 65px;
     border-radius: 50%;
-
-    width: 100px;
-
-    border: 2px solid #705ac3;
-
-    content: url(https://1.bp.blogspot.com/-6pCKWONStm4/YM9RzDm-AHI/AAAAAAAAAmM/jbn5fhYXc0cOtg6vozALyEtZwJq3MlsvwCLcBGAsYHQ/s0/cute-%25EB%2591%2590%25EB%25B6%25802.gif);
-
+    width: 65px;
+    border: 2px solid #ff768b;
+    z-index: 100;
 }
 
 /*프로필  hover */
-
 #board-info #board-info-profile-img:hover {
-
-    transform: scale(3); /* 크기가 커짐 */
-
+    transform: scale(1.5); /* 크기가 커짐 */
     transition: .50s; /* 0.2초에 걸쳐서 부드럽게 애니메이션이 진행 */
-
 }
 
-/*땃쥐*/
+#board-info #viewers-area #viewers:after {
+    content: "명의 쭈구리가 숨어있어요";
+    cursor: text;
+}
 
-#article-list:after {
+/* 메인 배너 링크 */
+#board-info #board-info-bottom a {
+    color: #ff788a;
+}
 
-    display: block;
+/* 메인 배너 */
+#article-list #article-list-category {
+    background: #ffebf2;
+    border-top: 2px solid #ff788a;
+}
 
-    content: '';
+#article-list #article-list-category>a {
+    background: #ffebf2;
+}
 
-    position: absolute;
+/* 메인 배너 글 공지 */
+#article-list>.article-list-row.notice {
+    background-color: #ffebf2;
+}
 
-    right: 0;
+/* 공지 아이콘 */
+span.a-badge i.fa.fa-info-circle {
+    color: #ff788a;
+}
 
-    top: 571px;
+/* 인기글 */
+#article-list>.article-list-row.hot {
+    background-color: #fff5f9;
+}
 
-    background-image: url(https://1.bp.blogspot.com/-qQNs3a1tRVg/YM9e3jvG5pI/AAAAAAAAAms/b-LvO-NFHR4wyV9CJF96o5RDYzViQdPfgCLcBGAsYHQ/s320/%25EB%2595%2583%25EC%25A5%2590.png);
+/* 글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: #ff788a;
+}
 
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-    width: 200px;
-
-    height: 200px;
-
-    transition-duration: 1s;
-
+/* 댓글 수 */
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+    color: #ff788a;
 }
 
 
-
-#article-list {
-
-    overflow: hidden;
-
+/* 버튼 */
+.btn-primary {
+    background-color: #ff788a;
+}
+.btn-primary:hover {
+    background-color: #ff5c72;
 }
 
-#article-list:hover:after {
-
-    transition-duration: 1s;
-
-    background-repeat: no-repeat;
-
-    right: -60px;
-
+.btn-primary:active:focus {
+    background-color: #ff5c72;
+    border-color: #ff5c72;
 }
 
-body::before {
 
-    content: '';
-
-    display: block;
-
-    position: absolute;
-
-    width: 400px;
-
-    height: 400px;
-
-    background-image: url(https://1.bp.blogspot.com/-ppqEK-bGYZo/YM9Tklr9ViI/AAAAAAAAAmU/hjlsRXMOZB4IX9cA8UgFk_lQ-RgXpR0wgCLcBGAsYHQ/s320/noona.png);
-
-    background-repeat: no-repeat;
-
-    background-size: contain;
-
-    left: 57px;
-
-    bottom: 0px;
-
-}
-
+/* 위로가기 버튼 */
 #movetotop {
-
     opacity: 1;
-
-    background: url(https://1.bp.blogspot.com/-Mbc9eiD4bng/YM9krRzG8EI/AAAAAAAAAm0/4B3oT6yW2C0UrpG0xopTMO_8uIZ8LzRNgCLcBGAsYHQ/s320/%25EB%2595%2583%25EC%25A5%2590.png);
-
-    width: 200px;
-
-    height: 200px;
-
+    background: url(https://whgusgh135.github.io/tgd/ellia_up.png);
+    width: 120px;
+    height: 120px;
     background-size: contain;
-
 }
 
-#movetotop img{display:none}
+#movetotop img {
+    display:none
+}
+
+
+/* 페이지 버튼 */
+.pagination>li>a, .pagination>li>span {
+    color: #ff788a;
+}
+
+.pagination>.active>a {
+    background-color: #ff788a;
+    border-color: #ff788a;
+}
+
+
+footer>.container>span>a {
+    color: #ff788a;
+}
+
+footer>.container>span>a:focus, footer>.container>span>a:hover {
+    color: #ff5c72;
+}
+
+
+/* 게시글 페이지 */
+#article-content-wrapper>.header {
+    border-top: 2px solid #ff768b;
+    background: #ffebf2;
+}
+
+#article-content-wrapper>.footer {
+    background: #fff5f9;
+}
+
+#article-reply-area {
+    background: #fff5f9;
+}
+
+/* 하트 펌핑 애니메이션 */
+@keyframes heartbeat {
+    0% {transform: scale(0.85);}50% {transform: scale(1.15);}100% {transform: scale(0.85);}
+}
+
+small.favo i.fa.fa-heart {
+    color: #ff96a6;
+    animation: heartbeat 1.5s infinite;
+}
