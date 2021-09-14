@@ -123,9 +123,11 @@ span.a-badge i.fa.fa-info-circle {
 /* 버튼 */
 .btn-primary {
     background-color: #ff788a;
+    border-color: #ff788a;
 }
 .btn-primary:hover {
     background-color: #ff5c72;
+    border-color: #ff5c72;
 }
 
 .btn-primary:active:focus {
@@ -150,6 +152,10 @@ span.a-badge i.fa.fa-info-circle {
 
 /* 페이지 버튼 */
 .pagination>li>a, .pagination>li>span {
+    color: #ff788a;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover {
     color: #ff788a;
 }
 
@@ -178,9 +184,14 @@ footer>.container>span>a:focus, footer>.container>span>a:hover {
     background: #fff5f9;
 }
 
-#article-reply-area {
+#article-reply-area #reply-real-area .reply>.reply-header {
     background: #fff5f9;
 }
+
+.fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic.fr-sticky-off {
+    border-top: 5px solid #ff788a;
+}
+
 
 /* 하트 펌핑 애니메이션 */
 @keyframes heartbeat {

@@ -1,0 +1,50 @@
+
+/* 프로필 */
+#board-info>h1>#board-info-profile-img {
+    position: relative;
+    margin: 0;
+}
+
+/* 로고 */
+header>#header-area>a>h1 {
+    background: url(https://whgusgh135.github.io/tgd/ellia_logo.png) no-repeat; /* url(로고 경로 입력) */
+    background-size: auto 32px;
+    width: 140px;
+}
+
+/* 검색 창 */
+header>#header-search-bar #header-search-input {
+    border: 2px solid #ff768b;
+    border-radius: 15px;
+}
+
+/* 검색 버튼 */
+i.fa.fa-search{
+    color: #ff768b;
+}
+
+/* 트게더 로고 배너 */
+header {
+    border-bottom: 4px solid #ff768b;
+    background: #faf5f7;
+}
+
+/* 상단 배너 광고 뱃지 */
+#header-top-notice strong.notice-badge {
+    background: #ff768b;
+}
+
+/* 댓글 수 */
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+    color: #ff768b;
+}
+
+nav#nav>.nav-header {
+    background: #ff768b;
+}
+
+i.fa.fa-bars {
+    color: #ff768b;
+}
+
+
