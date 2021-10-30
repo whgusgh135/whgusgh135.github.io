@@ -34,6 +34,37 @@ header {
     background: #ff768b;
 }
 
+/* 메인 배너 */
+#article-list #article-list-category {
+    background: #ffebf2;
+    border-top: 2px solid #ff788a;
+}
+
+#article-list #article-list-category>a {
+    background: #ffebf2;
+}
+
+/* 접속자 수 */
+#board-info #viewers-area #viewers:after {
+    content: "명의 쭈구리가 숨어있어요";
+    cursor: text;
+}
+
+/* 메인 배너 글 공지 */
+#article-list>.article-list-row.notice {
+    background-color: #ffebf2;
+}
+
+/* 인기글 */
+#article-list>.article-list-row.hot {
+    background-color: #fff5f9;
+}
+
+/* 글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: #ff788a;
+}
+
 /* 댓글 수 */
 #article-list>.article-list-row>.item>a.list-title>small.comment-count {
     color: #ff768b;
@@ -47,4 +78,77 @@ i.fa.fa-bars {
     color: #ff768b;
 }
 
+/* 페이지 버튼 */
+.pagination>li>a, .pagination>li>span {
+    color: #ff788a;
+}
 
+.pagination>li>a:hover, .pagination>li>span:hover {
+    color: #ff788a;
+}
+
+.pagination>.active>a {
+    background-color: #ff788a;
+    border-color: #ff788a;
+}
+
+
+/* 하단 */
+footer {
+    background: #faf5f7;
+}
+
+footer>.container>span>a {
+    color: #ff788a;
+}
+
+footer>.container>span>a:focus, footer>.container>span>a:hover {
+    color: #ff5c72;
+}
+
+
+/* 버튼 */
+.btn-primary {
+    background-color: #ff788a;
+    border-color: #ff788a;
+}
+.btn-primary:hover {
+    background-color: #ff5c72;
+    border-color: #ff5c72;
+}
+
+.btn-primary:active:focus {
+    background-color: #ff5c72;
+    border-color: #ff5c72;
+}
+
+
+/* 하트 펌핑 애니메이션 */
+@keyframes heartbeat {
+    0% {transform: scale(0.85);}50% {transform: scale(1.15);}100% {transform: scale(0.85);}
+}
+
+small.favo i.fa.fa-heart {
+    color: #ff96a6;
+    animation: heartbeat 1.5s infinite;
+}
+
+
+
+/* 게시글 페이지 */
+#article-content-wrapper>.header {
+    border-top: 2px solid #ff768b;
+    background: #ffebf2;
+}
+
+#article-content-wrapper>.footer {
+    background: #fff5f9;
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header {
+    background: #fff5f9;
+}
+
+.fr-toolbar.fr-ltr.fr-desktop.fr-top.fr-basic.fr-sticky-off {
+    border-top: 5px solid #ff788a;
+}
