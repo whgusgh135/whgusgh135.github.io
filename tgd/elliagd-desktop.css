@@ -1,9 +1,17 @@
 /* CSS 코드*/
 
 /*배경*/
-html, body {
-    background: #faf5f7;
+html {
+    background: linear-gradient(to bottom, pink, #FFFFFF);
     height: auto !important;
+}
+
+body {
+    background: transparent;
+    animation: snow 20s linear infinite;
+    background-image: url("https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png"),
+        url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"),
+        url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
 }
 
 /* 로고 */
@@ -11,7 +19,7 @@ header .row>div:nth-child(1)>a {
     display: block;
     width: 218px;
     height: 50px;
-    background: url(https://whgusgh135.github.io/tgd/ellia_logo.png) no-repeat;
+    background: url(https://whgusgh135.github.io/tgd/ellia_logo_snow.png) no-repeat;
     background-size: contain;
 }
 
@@ -27,7 +35,6 @@ header #right-search-form>input[type=text] {
 header #right-search-form>#right-search-btn {
     color: #ff768b;
 }
-
 
 
 /* 광고 배너 */
@@ -139,7 +146,7 @@ span.a-badge i.fa.fa-info-circle {
 /* 위로가기 버튼 */
 #movetotop {
     opacity: 1;
-    background: url(https://whgusgh135.github.io/tgd/ellia_up_v2.png);
+    background: url(https://whgusgh135.github.io/tgd/ellia_up_snow.png);
     width: 120px;
     height: 120px;
     background-size: contain;
@@ -193,6 +200,12 @@ footer>.container>span>a:focus, footer>.container>span>a:hover {
 }
 
 
+/* 새 메뉴 텝 */
+#article-list #article-list-category.can-float {
+    border-top: 2px solid #ff768b;
+}
+
+
 /* 하트 펌핑 애니메이션 */
 @keyframes heartbeat {
     0% {transform: scale(0.85);}50% {transform: scale(1.15);}100% {transform: scale(0.85);}
@@ -201,4 +214,10 @@ footer>.container>span>a:focus, footer>.container>span>a:hover {
 small.favo i.fa.fa-heart {
     color: #ff96a6;
     animation: heartbeat 1.5s infinite;
+}
+
+/* 눈 애니메이션 */
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
