@@ -1,4 +1,4 @@
-let menuButton = document.querySelector("#menu-toggle");
+let menuButton = document.querySelector("#mobile-header-dropdown-toggle");
 let menuIcon = document.querySelector(".header-navbar__mobile-menu-button")
 let mobileHeader = document.querySelector(".mobile-header__menu");
 let header = document.querySelector(".header-navbar");
